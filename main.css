@@ -1,3 +1,56 @@
 body {
-  background-color: plum;
+  background-color: lightcyan;
+  font-family: 'Sintony', sans-serif;
 }
+
+p {
+}
+
+#technologies {
+  list-style-type: none;
+  padding: 0px 0px 0px 0px;
+}
+
+footer {
+  font-size: .75em;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px black solid;
+  margin: 20 auto;
+  width: 500px;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20 auto;
+  width: 500px;
+  padding: 20px;
+ 
+  
+}
+
+ #navLinks {
+  float: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ }
+
+  #navLinks li {
+    display: block;
+    float: left;
+    padding: 10px 10px;
+  }
