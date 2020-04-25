@@ -22,10 +22,11 @@ footer {
 .fullPage {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   border: 1px black solid;
-  margin: 20 auto;
   width: 500px;
+  margin: 20 auto;
   padding: 20px;
 }
 
@@ -53,4 +54,9 @@ nav {
     display: block;
     float: left;
     padding: 10px 10px;
+  }
+
+  img {
+    height: 200px;
+    width: 300px;
   }
