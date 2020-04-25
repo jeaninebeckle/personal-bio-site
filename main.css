@@ -3,12 +3,10 @@ body {
   font-family: 'Sintony', sans-serif;
 }
 
-p {
-}
-
 #technologies {
   list-style-type: none;
   padding: 0px 0px 0px 0px;
+  text-align: center;
 }
 
 footer {
@@ -25,6 +23,7 @@ footer {
   flex-wrap: wrap;
   align-items: center;
   border: 1px black solid;
+  border-radius: 5px;
   width: 500px;
   margin: 20 auto;
   padding: 20px;
@@ -38,8 +37,6 @@ nav {
   margin: 20 auto;
   width: 500px;
   padding: 20px;
- 
-  
 }
 
  #navLinks {
@@ -50,13 +47,28 @@ nav {
   overflow: hidden;
  }
 
-  #navLinks li {
-    display: block;
-    float: left;
-    padding: 10px 10px;
-  }
+#navLinks li {
+  display: block;
+  float: left;
+  padding: 10px 10px;
+}
 
-  img {
-    height: 200px;
-    width: 300px;
-  }
+img {
+  height: 200px;
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-footer a {
+  margin: 10px
+}
+  
+h2, h3, h4, a {
+ text-align: center
+}
+
+#navLinks a {
+  padding: 20px;
+}
