@@ -9,18 +9,18 @@ const printToDom = (selector, textToPrint) => {
 
 const createProjectCards = () => {
   const allProjects = projects.getProjects();
-  let domString = '';
+  let domString = '<header>PROJECTS</header>';
   allProjects.forEach((project) => {
-    // if (project.available === true) {
-    domString += '<div class = "projectsPage">';
-    domString += `<h2>${project.title}</h2>`;
-    domString += `<img src="${project.screenshot}" alt = "screenshot">`;
-    domString += `<h3>${project.description}</h3>`;
-    domString += `<p>${project.technologiesUsed}</p>`;
-    domString += `<h4><a href="${project.url}">URL</a></h4>`;
-    domString += `<h4><a href="${project.githubUrl}">GitHub URL</a></h4>`;
-    domString += '</div>';
-    // }
+    if (project.available === true) {
+      domString += '<div class = "projectsPage">';
+      domString += `<h2>${project.title}</h2>`;
+      domString += `<img src="${project.screenshot}" alt = "screenshot">`;
+      domString += `<h3>${project.description}</h3>`;
+      domString += `<p>Technologies used: ${project.technologiesUsed}</p>`;
+      domString += `<h4><a href="${project.url}">URL</a></h4>`;
+      domString += `<h4><a href="${project.githubUrl}">GitHub URL</a></h4>`;
+      domString += '</div>';
+    }
   });
 
   printToDom('#projectsPage', domString);
