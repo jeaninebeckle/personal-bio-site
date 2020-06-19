@@ -1,5 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
 
 body {
   font-family: 'Sintony', sans-serif;
@@ -12,11 +13,15 @@ body {
 }
 
 footer {
-  font-size: .75em;
   margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(95, 102, 105, 0.8);
+  color: white;
+    a:hover {
+      color: white;
+    }
 }
 
 .fullPage {
@@ -24,11 +29,11 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  border: 1px black solid;
   border-radius: 5px;
-  width: 500px;
   margin: 20 auto;
   padding: 20px;
+  background-color: white;
+  max-width: 1000px;
 }
 
 nav {
@@ -37,7 +42,7 @@ nav {
   justify-content: center;
   align-items: center;
   margin: 20 auto;
-  width: 500px;
+  width: 700px;
   padding: 20px;
 }
 
@@ -47,30 +52,105 @@ nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
- }
-
-#navLinks li {
-  display: block;
-  float: left;
-  padding: 10px 10px;
+  li {
+    display: block;
+    float: left;
+    padding: 10px 10px;
+  }
 }
 
-img {
-  height: 200px;
-  width: 300px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+#hello img {
+  height: 500px;
+  float: right;
+  padding: none;
+  margin-right: 10em;
+}
+
+h3.hello {
+  font-family: 'Marmelad', sans-serif;
+  color: rgb(56, 231, 228);
+  font-size: 3.5em;
+  margin-left: 48px;
+  margin-top: 50px;
+}
+
+p.title {
+  color: white;
+  font-family: 'Marmelad', sans-serif;
+  margin-left: 5em;
+}
+
+p.jeanine {
+  font-family: 'Marmelad', sans-serif;
+  color: white;
+  font-size: 120px;
+  line-height: 1em;
+  margin-left: .5em;
+  padding: none;
+}
+
+.topPage {
+  background-color: rgba(95, 102, 105, 0.8);
+  display: inline-block;
+  width: 100%;
+  height: 500px;
+  overflow: auto;
 }
 
 .page-footer a {
   margin: 10px
 }
   
-h2, h3, h4, a {
+h2, h3, h4, a, p {
  text-align: center
+}
+
+a {
+  color: rgb(56, 231, 228);
 }
 
 #navLinks a {
   padding: 20px;
+  border: 2px solid white;
+  background-color: rgba(95, 102, 105, 0.8);
+}
+
+#navlinks a:hover {
+  color: white;
+}
+
+#bioPage {
+  font-size: 30px;
+  justify-content: center;
+}
+
+#technologiesPage {
+  font-size: 30px;
+}
+
+header {
+  padding: 20px;
+  font-size: 40px;
+  color: rgb(56, 231, 228);
+  font-family: 'Marmelad', sans-serif;
+}
+
+#projectsPage {
+    h3 {
+      padding: 20px;
+    }
+    img {
+      width: 1000px;
+    }
+    header {
+      padding: 0;
+    }
+}
+
+.projectsPage {
+  padding: 30px;
+    p {
+      font-size: 25px;
+  }
+  
 }
