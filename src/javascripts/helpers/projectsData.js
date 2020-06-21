@@ -1,12 +1,12 @@
 const projects = [
   {
-    title: 'Tamagotchi ',
-    screenshot: 'images/tamagotchi.png',
-    description: 'This page features four sections with buttons and various status levels for a virtual pet. When clicked, the buttons affect the status levels by a certain amount, with the values always staying between 0 and 100. The design is responsive.',
-    technologiesUsed: 'HTML, SCSS, JavaScript, Modules',
+    title: 'Bear Watcher',
+    screenshot: 'images/bearWatcher.png',
+    description: 'This is an exercise designed to practice modules, JavaScript, and Bootstrap. It features a form where the user can enter a bear\'s name and image and see it displayed on the page. Then the user can observe the bear\'s behavior and track in real time its fishing attempts and successes, with the overall number of successes displayed as total number of fish caught.',
+    technologiesUsed: 'HTML, Bootstrap, JavaScript, Modules',
     available: true,
-    url: 'https://github.com/jeaninebeckle/tamagotchi', // replace with personal site hosting link in the future
-    githubUrl: 'https://github.com/jeaninebeckle/tamagotchi',
+    url: 'https://github.com/jeaninebeckle/bear-watcher', // replace with personal site hosting link in the future
+    githubUrl: 'https://github.com/jeaninebeckle/bear-watcher',
   },
 
   {
@@ -20,13 +20,13 @@ const projects = [
   },
 
   {
-    title: 'Cool Project 3',
-    screenshot: 'https://bit.ly/2S6AACB',
-    description: 'This is the best project', // A good project description includes 'the what', 'the why', and 'the how'.
-    technologiesUsed: 'HTML, CSS, Vanilla JavaScript, Version Control with Github',
-    available: false,
-    url: 'https://github.com/jeaninebeckle', // replace with personal site hosting link in the future
-    githubUrl: 'https://github.com/jeaninebeckle',
+    title: 'Tamagotchi',
+    screenshot: 'images/tamagotchi.png',
+    description: 'This page features four sections with buttons and various status levels for a virtual pet. When clicked, the buttons affect the status levels by a certain amount, with the values always staying between 0 and 100. The design is responsive.',
+    technologiesUsed: 'HTML, SCSS, JavaScript, Modules',
+    available: true,
+    url: 'https://github.com/jeaninebeckle/tamagotchi', // replace with personal site hosting link in the future
+    githubUrl: 'https://github.com/jeaninebeckle/tamagotchi',
   },
 
   {
