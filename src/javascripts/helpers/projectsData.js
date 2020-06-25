@@ -4,8 +4,7 @@ import apiKeys from './apiKeys.json';
 const baseUrl = apiKeys.firebaseConfig.databaseURL;
 
 const getProjects = () => new Promise((resolve, reject) => {
-  axios.get(`${baseUrl}/projects.json`);
-  console.error(baseUrl)
+  axios.get(`${baseUrl}/projects.json`)
     .then((response) => {
       const projectObjects = response.data;
       const projects = [];
