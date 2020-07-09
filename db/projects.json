@@ -1,7 +1,7 @@
   {
     "project1": {
       "title": "Bear Watcher",
-      "screenshot": "images/bearWatcher.png",
+      "screenshot": "https://raw.githubusercontent.com/jeaninebeckle/bear-watcher/master/assets/images/bear3.png",
       "description": "This is an exercise designed to practice modules, JavaScript, and Bootstrap. It features a form where the user can enter a bear's name and image and see it displayed on the page. Then the user can observe the bear's behavior and track in real time its fishing attempts and successes, with the overall number of successes displayed as total number of fish caught.",
       "technologiesUsed": "HTML, Bootstrap, JavaScript, Modules",
       "available": true,
@@ -19,7 +19,7 @@
     },
     "project3": {
     "title": "Tamagotchi",
-    "screenshot": "images/tamagotchi.png",
+    "screenshot": "https://raw.githubusercontent.com/jeaninebeckle/tamagotchi/master/assets/tamagotchi.png",
     "description": "This page features four sections with buttons and various status levels for a virtual pet. When clicked, the buttons affect the status levels by a certain amount, with the values always staying between 0 and 100. The design is responsive.",
     "technologiesUsed": "HTML, SCSS, JavaScript, Modules",
     "available": true,
