@@ -27,13 +27,13 @@
     "githubUrl": "https://github.com/jeaninebeckle/tamagotchi"
     },
    "project4": {
-    "title": "Cool Project 4",
-    "screenshot": "https://bit.ly/2S6AACB",
-    "description": "This is the best project",
-    "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
-    "available": false,
-    "url": "https://github.com/jeaninebeckle", 
-    "githubUrl": "https://github.com/jeaninebeckle"
+    "title": "Nutshell - PanAm Airlines",
+    "screenshot": "https://github.com/jeaninebeckle/nutshell-alces-forked/blob/master/images/panam4.png?raw=true",
+    "description": "This is a 3-person group project that allowed us to practice using a Firebase database. It has an airline theme and is designed to allow the user to maintain a database of planes, airports, crew, and menu offerings so that they can plan and build flights that incorporate all of those components. We knew that the project would be split into two parts but we were surprised to be told after part 1 that we would be trading projects with another group. This part 2 final product was started by a different group and then we inherited their code to finish out the project so that we could get some real-world practice working with other developers' code.",
+    "technologiesUsed": "HTML, SCSS, JavaScript, Firebase, Modules",
+    "available": true,
+    "url": "https://panam-10421.web.app/", 
+    "githubUrl": "https://github.com/jeaninebeckle/nutshell-alces-forked"
     },
     "project5": {
     "title": "Cool Project 5",

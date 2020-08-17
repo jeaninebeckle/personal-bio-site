@@ -63,7 +63,7 @@ nav {
   height: 500px;
   float: right;
   padding: none;
-  margin-right: 10em;
+  margin-right: 20%;
 }
 
 h3.hello {
@@ -77,7 +77,8 @@ h3.hello {
 p.title {
   color: white;
   font-family: 'Marmelad', sans-serif;
-  margin-left: 5em;
+  margin-left: 4em;
+  font-size: 1.3em;
 }
 
 p.jeanine {
@@ -145,6 +146,9 @@ header {
     header {
       padding: 0;
     }
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 750px;
 }
 
 .projectsPage {
@@ -152,5 +156,4 @@ header {
     p {
       font-size: 25px;
   }
-  
 }
