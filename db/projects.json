@@ -27,13 +27,13 @@
     "githubUrl": "https://github.com/jeaninebeckle/tamagotchi"
     },
    "project4": {
-    "title": "Cool Project 4",
+    "title": "Nutshell - PanAm Airlines",
     "screenshot": "https://bit.ly/2S6AACB",
-    "description": "This is the best project",
-    "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
-    "available": false,
-    "url": "https://github.com/jeaninebeckle", 
-    "githubUrl": "https://github.com/jeaninebeckle"
+    "description": "This was a three-person project ",
+    "technologiesUsed": "HTML, SCSS, JavaScript, Firebase, Modules",
+    "available": true,
+    "url": "https://panam-10421.web.app/", 
+    "githubUrl": "https://github.com/jeaninebeckle/nutshell-alces"
     },
     "project5": {
     "title": "Cool Project 5",
