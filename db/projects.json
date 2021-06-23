@@ -2,8 +2,8 @@
     "project1": {
       "title": "It Takes A Village",
       "screenshot": "https://github.com/jeaninebeckle/knit-picker/blob/main/assets/images/knitpicker1.png?raw=true",
-      "description": "This is my front-end capstone project. It's a single-page application built with React that allows the user to organize their personal knitting supplies, patterns, and knitting projects as well as upload photos of finished projects to a gallery. It has full CRUD capability throughout, and Firebase is utilized for the database, deployment, and file uploading/hosting.", 
-      "technologiesUsed": "React.js, SCSS, ReactStrap, React Routing, Firebase",
+      "description": "This is my back-end capstone project. It's a single-page application built with React that allows the user to organize their personal knitting supplies, patterns, and knitting projects as well as upload photos of finished projects to a gallery. It has full CRUD capability throughout, and Firebase is utilized for the database, deployment, and file uploading/hosting.", 
+      "technologiesUsed": "React.js, SCSS, React Bootstrap, React Routing, Firebase, ",
       "available": true,
       "url": "https://knit-picker.web.app/",
       "githubUrl": "https://github.com/jeaninebeckle/knit-picker/"
