@@ -1,6 +1,6 @@
   {
     "project1": {
-      "title": "Knit Picker",
+      "title": "It Takes A Village",
       "screenshot": "https://github.com/jeaninebeckle/knit-picker/blob/main/assets/images/knitpicker1.png?raw=true",
       "description": "This is my front-end capstone project. It's a single-page application built with React that allows the user to organize their personal knitting supplies, patterns, and knitting projects as well as upload photos of finished projects to a gallery. It has full CRUD capability throughout, and Firebase is utilized for the database, deployment, and file uploading/hosting.", 
       "technologiesUsed": "React.js, SCSS, ReactStrap, React Routing, Firebase",
@@ -9,6 +9,15 @@
       "githubUrl": "https://github.com/jeaninebeckle/knit-picker/"
     },
     "project2": {
+      "title": "Knit Picker",
+      "screenshot": "https://github.com/jeaninebeckle/knit-picker/blob/main/assets/images/knitpicker1.png?raw=true",
+      "description": "This is my front-end capstone project. It's a single-page application built with React that allows the user to organize their personal knitting supplies, patterns, and knitting projects as well as upload photos of finished projects to a gallery. It has full CRUD capability throughout, and Firebase is utilized for the database, deployment, and file uploading/hosting.", 
+      "technologiesUsed": "React.js, SCSS, ReactStrap, React Routing, Firebase",
+      "available": true,
+      "url": "https://knit-picker.web.app/",
+      "githubUrl": "https://github.com/jeaninebeckle/knit-picker/"
+    },
+    "project3": {
       "title": "Nutshell - PanAm Airlines",
       "screenshot": "https://github.com/jeaninebeckle/nutshell-alces-forked/blob/master/images/panam4.png?raw=true",
       "description": "This is a 3-person group project that allowed us to practice using a Firebase database. It has an airline theme and is designed to allow the user to maintain a database of planes, airports, crew, and menu offerings so that they can plan and build flights that incorporate all of those components. We knew that the project would be split into two parts but we were surprised to be told after part 1 that we would be trading projects with another group. This part 2 final product was started by a different group and then we inherited their code to finish out the project so that we could get some real-world practice working with other developers' code.",
@@ -17,7 +26,7 @@
       "url": "https://panam-10421.web.app/", 
       "githubUrl": "https://github.com/jeaninebeckle/nutshell-alces-forked"
     },
-    "project3": {
+    "project4": {
       "title": "Chatty App - Narnia Theme",
      "screenshot": "https://raw.githubusercontent.com/jeaninebeckle/chatty-delta-narnia/master/images/narnia.png",
      "description": "This was a four-person group project to build a chat app for multiple users to interact with. It enables users to select their name, add messages to the chat screen, delete a message, or clear all messages. It also features dark mode and large text options, as well as a section where the user can choose their own custom theme colors.",
@@ -25,23 +34,5 @@
      "available": true,
      "url": "https://chatty-narnia.web.app/",
      "githubUrl": "https://github.com/jeaninebeckle/chatty-delta-narnia"
-    },
-    "project4": {
-      "title": "Bear Watcher",
-      "screenshot": "https://raw.githubusercontent.com/jeaninebeckle/bear-watcher/master/assets/images/bear3.png",
-      "description": "This is an exercise designed to practice modules, JavaScript, and Bootstrap. It features a form where the user can enter a bear's name and image and see it displayed on the page. Then the user can observe the bear's behavior and track in real time its fishing attempts and successes, with the overall number of successes displayed as total number of fish caught.",
-      "technologiesUsed": "HTML, Bootstrap, JavaScript, Modules",
-      "available": true,
-      "url": "https://bear-watcher-a50f2.web.app/",
-      "githubUrl": "https://github.com/jeaninebeckle/bear-watcher"
-    },
-    "project5": {
-    "title": "Tamagotchi",
-    "screenshot": "https://raw.githubusercontent.com/jeaninebeckle/tamagotchi/master/assets/tamagotchi.png",
-    "description": "This page features four sections with buttons and various status levels for a virtual pet. When clicked, the buttons affect the status levels by a certain amount, with the values always staying between 0 and 100. The design is responsive.",
-    "technologiesUsed": "HTML, SCSS, JavaScript, Modules",
-    "available": true,
-    "url": "https://tamagotchi-32757.web.app/",
-    "githubUrl": "https://github.com/jeaninebeckle/tamagotchi"
     }
 }
