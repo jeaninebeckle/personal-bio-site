@@ -1,14 +1,5 @@
   {
     "project1": {
-      "title": "It Takes A Village",
-      "screenshot": "https://github.com/jeaninebeckle/capstone-client/blob/main/images/village1.png?raw=true",
-      "description": "Backend capstone project for Nashville Software School. This full-stack web app was built to be a resource toolkit for volunteers and staff that are involved with a local Nashville organization's after-school tutoring program. It allows volunteers to have quick access to announcements, the weekly tutoring sign-up slots, accordions containing frequently-accessed tutoring resource links, and donation requests posted on a 'needs board'. Staff have additional permissions to view all registered users and control the site's content, such as posting and deleting new announcements or donation needs.", 
-      "technologiesUsed": "Python, Django, React.js, SCSS, React Bootstrap, SASS, Firebase, Heroku",
-      "available": true,
-      "url": "https://lmv-journey.web.app/",
-      "githubUrl": "https://github.com/jeaninebeckle/capstone-client"
-    },
-    "project2": {
       "title": "Knit Picker",
       "screenshot": "https://github.com/jeaninebeckle/knit-picker/blob/main/assets/images/knitpicker1.png?raw=true",
       "description": "Frontend capstone project for Nashville Software School. It's a single-page application built with React that allows the user to organize their personal knitting supplies, patterns, and knitting projects as well as upload photos of finished projects to a gallery. It has full CRUD capability throughout, and Firebase is utilized for the database, deployment, and file uploading/hosting.", 
@@ -17,9 +8,18 @@
       "url": "https://knit-picker.web.app/",
       "githubUrl": "https://github.com/jeaninebeckle/knit-picker/"
     },
+    "project2": {
+      "title": "It Takes A Village",
+      "screenshot": "https://github.com/jeaninebeckle/capstone-client/blob/main/images/village1.png?raw=true",
+      "description": "Backend capstone project for Nashville Software School. This full-stack web app was built to be a resource toolkit for volunteers and staff that are involved with a local Nashville organization's after-school tutoring program. It allows volunteers to have quick access to announcements, the weekly tutoring sign-up slots, accordions containing frequently-accessed tutoring resource links, and donation requests posted on a 'needs board'. Staff have additional permissions to view all registered users and control the site's content, such as posting and deleting new announcements or donation needs.", 
+      "technologiesUsed": "Python, Django, React.js, SCSS, React Bootstrap, SASS, Firebase, Heroku",
+      "available": true,
+      "url": "https://lmv-journey.web.app/",
+      "githubUrl": "https://github.com/jeaninebeckle/capstone-client"
+    },
     "project3": {
       "title": "Nutshell - PanAm Airlines",
-      "screenshot": "https://github.com/jeaninebeckle/nutshell-alces-forked/blob/master/images/panam4.png?raw=true",
+      "screenshot": "https://raw.githubusercontent.com/jeaninebeckle/nutshell-alces-forked/master/images/panam1.png",
       "description": "A 3-person group project that allowed us to practice using a Firebase database. It has an airline theme and is designed to allow the user to maintain a database of planes, airports, crew, and menu offerings so that they can plan and build flights that incorporate all of those components. We knew that the project would be split into two parts but we were surprised to be told after part 1 that we would be trading projects with another group. This part 2 final product was started by a different group and then we inherited their code to finish out the project so that we could get some real-world practice working with other developers' code.",
       "technologiesUsed": "HTML, SCSS, JavaScript, Firebase, Modules",
       "available": true,

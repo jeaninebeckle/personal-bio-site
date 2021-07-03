@@ -9,7 +9,7 @@ import '../styles/main.scss';
 const createProjectCards = () => {
   projectsData.getProjects()
     .then((projects) => {
-      let domString = '<header class="projectsHeader">PROJECTS</header>';
+      let domString = '<header class="projectsHeader">Projects</header>';
       projects.forEach((project) => {
         if (project.available === true) {
           domString += '<div class = "projectsPage cardRow row">';
@@ -20,8 +20,8 @@ const createProjectCards = () => {
           domString += `<h2>${project.title}</h2>`;
           domString += `<h3>${project.description}</h3>`;
           domString += `<p>Technologies used: ${project.technologiesUsed}</p>`;
-          domString += `<h4><a href="${project.url}">URL</a></h4>`;
-          domString += `<h4><a href="${project.githubUrl}">GitHub URL</a></h4>`;
+          domString += `<h4><a href="${project.url}">- View live -</a></h4>`;
+          domString += `<h4><a href="${project.githubUrl}">- View on GitHub -</a></h4>`;
           domString += '</div></div>';
         }
       });

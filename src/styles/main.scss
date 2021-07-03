@@ -158,6 +158,9 @@ header {
     h3 {
       font-size: 1.2em;
     }
+    a {
+      color: white;
+    }
 }
 
 #projectsPage {
@@ -169,6 +172,7 @@ header {
     }
     header {
       padding: 0;
+      margin-left: 30px;
     }
 
 }
@@ -327,6 +331,7 @@ header {
   // max-height: 50%;
   margin-top: 20px;
   padding-right: 30px;
+  
 }
 
 .bio-row {
