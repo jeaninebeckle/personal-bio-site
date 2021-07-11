@@ -13,8 +13,11 @@ body {
 }
 
 .top-photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   height: 100vh;
-  background-image: url('../../images/burst.jpg');
+  background-image: url('../../images/headerphoto.jpg');
   background-size: cover;
   background-attachment: fixed;
 }
@@ -72,20 +75,6 @@ nav {
   }
 }
 
-#hello img {
-  height: 500px;
-  float: right;
-  padding: none;
-  margin-right: 20%;
-}
-
-h3.hello {
-  font-family: 'Marmelad', sans-serif;
-  color: rgb(56, 231, 228);
-  font-size: 3.5em;
-  margin-left: 48px;
-  margin-top: 50px;
-}
 
 p.title {
   color: white;
@@ -115,7 +104,7 @@ p.jeanine {
   margin: 10px
 }
   
-h2, h3, h4, a, p {
+h2, h3, h4, a, p, h5 {
  text-align: center
 }
 
@@ -174,7 +163,6 @@ header {
       padding: 0;
       margin-left: 30px;
     }
-
 }
 
 .projectsPage {
@@ -185,132 +173,11 @@ header {
 }
 
 .header-text {
-  padding-top: auto;
-  padding-bottom: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  vertical-align: center;
-}
-
-.header-text p {
-  font-family: 'Marmelad', sans-serif;
-  text-shadow: 3px 5px 4px rgba(0,0,0,0.3);
-  border-right: .15em solid white;
-  font-size: 100px;
-  white-space: nowrap;
-  overflow: hidden;
-  color: white;
-}
-.header-text p:nth-child(1) {
-  width: 5em;
-  -webkit-animation: type 2s steps(29, end);
-  animation: type 2s steps(29, end);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.header-text p:nth-child(2) {
-  width: 11.5em;
-  opacity: 0;
-  -webkit-animation: type2 2s steps(29, end);
-  animation: type2 2s steps(29, end);
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-@keyframes type {
-  0% {
-    width: 0;
-  }
-  99.9% {
-    border-right: .01em solid white;
-  }
-  100% {
-    border: none;
-  }
-}
-
-@-webkit-keyframes type {
-  0% {
-    width: 0;
-  }
-  99.9% {
-    border-right: .01em solid white;
-  }
-  100% {
-    border: none;
-  }
-}
-
-@keyframes type2 {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  99.9% {
-    border-right: .01em solid white;
-  }
-  100% {
-    opacity: 1;
-    border: none;
-  }
-}
-
-@-webkit-keyframes type2 {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  99.9% {
-    border-right: .01em solid white;
-  }
-  100% {
-    opacity: 1;
-    border: none;
-  }
-}
-
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-@-webkit-keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-
-.subtitle h5 { 
-  -webkit-animation-delay: 10s;
-  animation-delay: 10s;
-  animation: fadeInAnimation ease 2s; 
-  animation-iteration-count: 1; 
-  animation-fill-mode: forwards; 
-  color: white;
-} 
-
-@keyframes fadeInAnimation { 
-  0% { 
-      opacity: 0; 
-  } 
-  100% { 
-      opacity: 1; 
-   } 
-} 
 
 .bio {
   width: 100%;
@@ -331,10 +198,46 @@ header {
   // max-height: 50%;
   margin-top: 20px;
   padding-right: 30px;
-  
 }
 
 .bio-row {
   background-color: rgb(45, 45, 45);
   padding-bottom: 50px;
+}
+
+.header-text p {
+  font-family: 'Marmelad', sans-serif;
+  color: white;
+  margin-bottom: 0;
+  font-size: 100px;
+}
+
+.header-text h3 {
+  font-family: 'Marmelad', sans-serif;
+  color: white;
+  max-width: 1025px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.typed {
+
+  border-right: .1em solid rgba(27, 130, 128,1);
+  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+  animated-cursor 600ms steps(29,end) infinite;
+}
+
+/* text animation */
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 1025px;}
+}
+/* cursor animations */
+@keyframes animated-cursor{
+  from{border-right-color: rgba(27, 130, 128,1);}
+  to{border-right-color: transparent;}
 }
