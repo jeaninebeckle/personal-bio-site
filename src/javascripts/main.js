@@ -9,7 +9,7 @@ import '../styles/main.scss';
 const createProjectCards = () => {
   projectsData.getProjects()
     .then((projects) => {
-      let domString = '<header class="projectsHeader">Projects</header>';
+      let domString = '<header class="projectsHeader fancy"><span>Projects</span></header>';
       projects.forEach((project) => {
         if (project.available === true) {
           domString += '<div class = "projectsPage cardRow row">';
