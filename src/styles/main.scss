@@ -13,12 +13,6 @@ body {
   padding-left: 0;
 }
 
-#technologies {
-  list-style-type: none;
-  padding: 0px 0px 0px 0px;
-  text-align: center;
-}
-
 footer {
   margin: 20px;
   display: flex;
@@ -119,9 +113,36 @@ a {
   justify-content: center;
 }
 
-#technologiesPage {
+#technologies {
   font-size: 30px;
+  list-style-type: none;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+  max-width: 1000px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-bottom: 50px;
 }
+
+#techHeader {
+  padding: 30px;
+  background-color: rgb(45, 45, 45);
+}
+
+#techBorder {
+  padding: 30px;
+  border-bottom: 2px solid rgb(27, 130, 128);
+}
+
+#technologiesPage {
+  background-color: rgb(45, 45, 45);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  color: white;
+}
+
 
 header {
   padding: 20px;
@@ -160,6 +181,14 @@ header {
     }
 }
 
+.github {
+  width: 96px;
+}
+
+.jquery, .django, .github {
+  filter: invert(1);
+}
+
 .projectsPage {
   padding: 30px;
     p {
@@ -181,6 +210,7 @@ header {
 }
 
 .bio-text {
+  padding: 20px;
   padding-top: 40px;
   margin-left: 30px;
   font-size: 1.5em;
