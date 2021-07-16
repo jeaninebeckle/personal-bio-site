@@ -3,6 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+@import 'variables';
 
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -11,7 +16,7 @@
 }
 
 body {
-  font-family: 'Sintony', sans-serif;
+  font-family: $body-font;
   position: absolute;
 }
 
@@ -27,8 +32,10 @@ body {
   $linesHeight: 10px;
   content: "";
   position: absolute;
-  border-bottom: 2px solid rgb(27, 130, 128);
-  border-top: 2px solid rgb(27, 130, 128);
+  border-bottom: 2px solid $border-color;
+  border-top: 2px solid $border-color;
+  // border-bottom: 2px solid rgb(27, 130, 128);
+  // border-top: 2px solid rgb(27, 130, 128);
   width: 300px;
   height: $linesHeight;
   top: 50%;
@@ -72,22 +79,6 @@ footer {
   padding: 20px;
   background-color: white;
   max-width: 1000px;
-}
-
-p.title {
-  color: white;
-  font-family: 'Marmelad', sans-serif;
-  margin-left: 4em;
-  font-size: 1.3em;
-}
-
-p.jeanine {
-  font-family: 'Marmelad', sans-serif;
-  color: white;
-  font-size: 120px;
-  line-height: 1em;
-  margin-left: .5em;
-  padding: none;
 }
 
 .topPage {
@@ -136,8 +127,6 @@ nav {
   padding: 20px;
   line-height: 50px;
   color: black
-  // border: 2px solid white;
-  // background-color: rgba(95, 102, 105, 0.8);
 }
 
 #navlinks a:hover {
@@ -189,7 +178,7 @@ header {
   font-size: 40px;
   // color: rgb(56, 231, 228);
   color: white;
-  font-family: 'Marmelad', sans-serif;
+  font-family: $header-font;
 }
 
 .projectsSection {
@@ -219,7 +208,7 @@ header {
     }
 }
 
-.github {
+.github, .postman {
   width: 96px;
 }
 
@@ -276,36 +265,38 @@ header {
 }
 
 .header-text p {
-  font-family: 'Marmelad', sans-serif;
+  font-family: 'Unica One', 'cursive';
   color: white;
   margin-bottom: 0;
   font-size: 100px;
 }
 
 .typed {
-  font-family: 'Istok Web', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: white;
   white-space: nowrap;
   overflow: hidden;
-  font-size: 49.5px;
-  max-width: 1020px;
-  display: flex;
+  font-size: 44px;
+  max-width: 1008px;
+  display: inline-block;
   margin-left: auto;
   margin-right: auto;
   margin-top: -75px;
+  // text-transform: uppercase;
 }
 
 .typed {
 
   border-right: .1em solid rgba(255,255,255,1);
-  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+  animation: animated-text 3.5s steps(29, end),
   animated-cursor 600ms steps(29,end) infinite;
 }
 
 /* text animation */
 @keyframes animated-text{
   from{width: 0;}
-  to{width: 1020px;}
+  to{width: 100%;}
+  // to{width: 1020px;}
 }
 /* cursor animations */
 @keyframes animated-cursor{
