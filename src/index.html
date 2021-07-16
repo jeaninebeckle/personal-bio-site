@@ -4,63 +4,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="favicon.ico">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Jeanine Beckle's Personal Bio Site</title>
-  <link href="https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap" rel="stylesheet">
+  <title>Jeanine Beckle | Developer</title>
 </head>
 
 <body>
   <!-- Navigation -->
   <nav>
-    <h2>Jeanine Beckle</h2>
     <p id="navLinks">
-      <a href="#bioPage">BIO</a></li>
-      <a href="#technologiesPage">TECHNOLOGIES</a></li>
+      <a href="#bio">ABOUT</a></li>
       <a href="#projectsPage">PROJECTS</a></li>
-      <a href="#footer">CONTACT ME</a></li>
+      <a href="#technologiesPage">TECHNOLOGIES</a></li>
+      <a href="#footer">CONTACT</a></li>
     </p>
   </nav>
   <!-- End Navigation -->
 
   <!-- Primary View -->
-  <div class="topPage" id="hello">
+  <div>
+  <!-- <div class="container-fluid"> -->
+  <div class="top-photo">
+    <div class="header-text">
+      <p>
+        Hello!
+      </p>
+      </div>
+      <h3 class="typed">
+        I'm Jeanine Beckle, Full Stack Web Developer
+      </h3>
+  </div>
+  <!-- <div class="topPage" id="hello">
     <img src="https://i.imgur.com/Uy9eJIR.jpg">
     <div>  
     <h3 class="hello">Hello! I'm</h3>
       <p class="jeanine">Jeanine <br> Beckle</p>
       <p class="title">Full Stack Software Developer</p>
     </div>
-</div>
+</div> -->
 
-  <div class="fullPage" id="bioPage">
-    <header>BIO</header>
-    <p>I'm a Chicagoland transplant, but Nashville has been my home for over a decade. After several years working in artist royalties at a record label, I set my sights on a career change to tech after realizing that it was a field where I could put my love for problem-solving, learning, collaboration, and logic to good use. I thrive in environments where I can combine my eye for detail, relational nature, and years of real-world business experience.<br>Currently, I’m a remote government contractor doing content management and frontend web development work, and I look forward to continually growing in my skills as a developer.</p>
+  <!-- <div class="fullPage row" id="bioPage"> -->
+    <div class="row bio-row" id="bio">
+    <header class="bio fancy"><span>About Me</span></header>
+    <div class="col-lg-9">
+      <p class="bio-text">I'm a Chicagoland transplant, but Nashville has been my home for over a decade. After several years working in artist royalties at a record label, I set my sights on a career change to tech after realizing that it was a field where I could put my love for problem-solving, learning, collaboration, and logic to good use. I thrive in environments where I can combine my eye for detail, relational nature, and years of real-world business experience.<br>Currently, I’m a remote government contractor doing content management and frontend web development work, and I look forward to continually growing in my skills as a developer.</p>
+    </div>
+    <div class="col-lg-3">
+      <p class="hello"><img class="img-fluid profile" src="../images/profilepic.png"></p>
+    </div>
   </div>
-  <div class="fullPage" id="technologiesPage">
+  
+  <div id="projectsPage">
+    <div class="container-fluid">
+      <div class="projectsSection">
+
+      </div>
+    </div>
+  </div>
+  <header class="fancy" id="techHeader"><span>Technologies</span></header>
+  <div id="technologiesPage">
     <div id="technologies">
-      <header>TECHNOLOGIES</header>
-      <h3>Tools and Technologies I Use:</h3>
       <img src="https://img.icons8.com/color/96/000000/jira.png"/>
-      <img src="https://img.icons8.com/fluent/96/000000/github.png"/>
-      <img src="https://img.icons8.com/color/96/000000/javascript.png"/>
-      <img src="https://img.icons8.com/ios-filled/96/000000/jquery.png"/>
+      <img class="github" src="https://img.icons8.com/fluent/96/000000/github.png"/>
       <img src="https://img.icons8.com/color/96/000000/html-5.png"/>
+      <img src="https://img.icons8.com/color/96/000000/javascript.png"/>
+      <img class="jquery" src="https://img.icons8.com/ios-filled/96/000000/jquery.png"/>
+      <img src="https://img.icons8.com/color/96/000000/react-native.png"/>
       <img src="https://img.icons8.com/color/96/000000/css3.png"/>
       <img src="https://img.icons8.com/color/96/000000/sass.png"/>
       <img src="https://img.icons8.com/color/96/000000/firebase.png"/>
       <img src="https://img.icons8.com/color/96/000000/bootstrap.png"/>
+      <img class="django" src="https://img.icons8.com/material/96/000000/django.png"/>
       <img src="https://img.icons8.com/color/96/000000/drupal.png"/>
       <img src="https://img.icons8.com/color/96/000000/slack-new.png"/>
-      <img src="https://img.icons8.com/color/96/000000/react-native.png"/>
       <img src="https://img.icons8.com/color/96/000000/python.png"/>
       <img src="https://img.icons8.com/fluent/96/000000/visual-studio-code-2019.png"/>
-      <img src="https://img.icons8.com/color/96/000000/npm.png"/>
+      <img class="postman" src="../images/postman-icon.png"/>
     </div>
   </div>
-  <div class="fullPage" id="projectsPage"></div>
 
   <footer id="footer" class="page-footer">
-    | <a href="mailto:jeaninebeckle@gmail.com">jeaninebeckle@gmail.com</a> | <a href="https://www.linkedin.com/in/jeanine-beckle/">LinkedIn</a> | <a href = "https://github.com/jeaninebeckle">GitHub </a>| <a href="https://icons8.com/">Icons courtesy of Icons8</a> |
+    - <a href="mailto:jeaninebeckle@gmail.com">jeaninebeckle@gmail.com</a> - <a href="https://www.linkedin.com/in/jeanine-beckle/">LinkedIn</a> - <a href = "https://github.com/jeaninebeckle">GitHub </a> - <a href="https://icons8.com/">Icons courtesy of Icons8</a> -
   </footer>
-  
+  </div>
 </body>
 </html>

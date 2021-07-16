@@ -9,21 +9,24 @@ import '../styles/main.scss';
 const createProjectCards = () => {
   projectsData.getProjects()
     .then((projects) => {
-      let domString = '<header>PROJECTS</header>';
+      let domString = '<header class="projectsHeader fancy"><span>Projects</span></header>';
       projects.forEach((project) => {
         if (project.available === true) {
-          domString += '<div class = "projectsPage">';
-          domString += `<h2>${project.title}</h2>`;
+          domString += '<div class = "projectsPage cardRow row">';
+          domString += '<div class="col-md-6">';
           domString += `<img src="${project.screenshot}" alt = "screenshot">`;
+          domString += '</div>';
+          domString += '<div class="col-md-6">';
+          domString += `<h2 class="projTitle">${project.title}</h2>`;
           domString += `<h3>${project.description}</h3>`;
           domString += `<p>Technologies used: ${project.technologiesUsed}</p>`;
-          domString += `<h4><a href="${project.url}">URL</a></h4>`;
-          domString += `<h4><a href="${project.githubUrl}">GitHub URL</a></h4>`;
-          domString += '</div>';
+          domString += `<h4><a href="${project.url}">- View live -</a></h4>`;
+          domString += `<h4><a href="${project.githubUrl}">- View on GitHub -</a></h4>`;
+          domString += '</div></div>';
         }
       });
 
-      utils.printToDom('#projectsPage', domString);
+      utils.printToDom('.projectsSection', domString);
     })
     .catch((err) => console.error('it broke', err));
 };

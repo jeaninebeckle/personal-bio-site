@@ -1,25 +1,70 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 @import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+@import 'variables';
 
-body {
-  font-family: 'Sintony', sans-serif;
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-#technologies {
-  list-style-type: none;
-  padding: 0px 0px 0px 0px;
+body {
+  font-family: $body-font;
+  position: absolute;
+}
+
+.fancy {
+  overflow: hidden;
   text-align: center;
+}
+.fancy span {
+  position: relative;  
+}
+.fancy span:before,
+.fancy span:after {
+  $linesHeight: 10px;
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid $border-color;
+  border-top: 2px solid $border-color;
+  // border-bottom: 2px solid rgb(27, 130, 128);
+  // border-top: 2px solid rgb(27, 130, 128);
+  width: 300px;
+  height: $linesHeight;
+  top: 50%;
+  margin-top: floor(-$linesHeight / 2);
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 footer {
-  margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(95, 102, 105, 0.8);
-  color: white;
+    a {
+      color: black
+    }
     a:hover {
+      background-color: rgb(45, 45, 45);
+      text-decoration: none;
       color: white;
     }
 }
@@ -36,60 +81,6 @@ footer {
   max-width: 1000px;
 }
 
-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 20 auto;
-  width: 700px;
-  padding: 20px;
-}
-
- #navLinks {
-  float: left;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  li {
-    display: block;
-    float: left;
-    padding: 10px 10px;
-  }
-}
-
-#hello img {
-  height: 500px;
-  float: right;
-  padding: none;
-  margin-right: 20%;
-}
-
-h3.hello {
-  font-family: 'Marmelad', sans-serif;
-  color: rgb(56, 231, 228);
-  font-size: 3.5em;
-  margin-left: 48px;
-  margin-top: 50px;
-}
-
-p.title {
-  color: white;
-  font-family: 'Marmelad', sans-serif;
-  margin-left: 4em;
-  font-size: 1.3em;
-}
-
-p.jeanine {
-  font-family: 'Marmelad', sans-serif;
-  color: white;
-  font-size: 120px;
-  line-height: 1em;
-  margin-left: .5em;
-  padding: none;
-}
-
 .topPage {
   background-color: rgba(95, 102, 105, 0.8);
   display: inline-block;
@@ -99,24 +90,48 @@ p.jeanine {
 }
 
 .page-footer a {
-  margin: 10px
+  padding: 10px;
+  line-height: 30px;
+  font-weight: 700;
 }
   
-h2, h3, h4, a, p {
+h2, h3, h4, a, p, h5 {
  text-align: center
 }
 
-a {
-  color: rgb(56, 231, 228);
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // margin: 10 auto;
+  // background-color: rgb(45, 45, 45);
+}
+
+ #navLinks {
+  font-weight: 700;
+  float: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  li {
+    display: block;
+    float: left;
+    // padding: 10px 10px;
+  }
 }
 
 #navLinks a {
+  font-weight: bold;
   padding: 20px;
-  border: 2px solid white;
-  background-color: rgba(95, 102, 105, 0.8);
+  line-height: 50px;
+  color: black
 }
 
 #navlinks a:hover {
+  background-color: rgb(45, 45, 45);
+  text-decoration: none;
   color: white;
 }
 
@@ -125,58 +140,172 @@ a {
   justify-content: center;
 }
 
-#technologiesPage {
+#technologies {
   font-size: 30px;
+  list-style-type: none;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+  max-width: 1000px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-bottom: 50px;
+}
+
+#techHeader {
+  padding: 30px;
+  background-color: rgb(45, 45, 45);
+}
+
+#techBorder {
+  padding: 30px;
+  border-bottom: 2px solid rgb(27, 130, 128);
+}
+
+#technologiesPage {
+  background-color: rgb(45, 45, 45);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  color: white;
 }
 
 header {
   padding: 20px;
+  padding-bottom: 0;
   font-size: 40px;
-  color: rgb(56, 231, 228);
-  font-family: 'Marmelad', sans-serif;
+  // color: rgb(56, 231, 228);
+  color: white;
+  font-family: $header-font;
+}
+
+.projectsSection {
+
+    h3 {
+      font-size: 1.2em;
+    }
+    padding-left: 30px;
+
 }
 
 #projectsPage {
+    background-image: url('../../images/projectsbg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
     h3 {
       padding: 20px;
     }
     img {
-      width: 1000px;
+      max-width: 100%;
     }
     header {
-      padding: 0;
+      padding: 20px;
+      color: black;
     }
-    overflow-x: hidden;
-    overflow-y: auto;
-    height: 750px;
+    a {
+      color: black;
+    }
+}
+
+.github, .postman {
+  width: 96px;
+}
+
+.jquery, .django, .github {
+  filter: invert(1);
 }
 
 .projectsPage {
   padding: 30px;
     p {
-      font-size: 25px;
+      font-size: 1em;
   }
 }
 
-.typewriter h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+.header-text {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+
+.bio {
+  width: 100%;
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+.bio-text {
+  padding: 20px;
+  padding-top: 40px;
+  margin-left: 30px;
+  font-size: 1.5em;
+  color: white;
+}
+
+.profile {
+  margin-top: 20px;
+  padding-right: 30px;
+}
+
+.bio-row {
+  background-color: rgb(45, 45, 45);
+  padding-bottom: 50px;
+  margin-right: 0;
+}
+
+.top-photo {
+  height: 100vh;
+  background-image: url('../../images/headerphoto.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-shadow: 1px 1px 0 rgb(223, 227, 229), 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.header-text p {
+  font-family: 'Unica One', 'cursive';
+  color: white;
+  margin-bottom: 0;
+  font-size: 100px;
+}
+
+.typed {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 44px;
+  max-width: 1008px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -75px;
+  // text-transform: uppercase;
+}
+
+.typed {
+  border-right: .1em solid rgba(255,255,255,1);
+  animation: animated-text 3.5s steps(29, end),
+  animated-cursor 600ms steps(29,end) infinite;
+}
+
+/* text animation */
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 100%;}
+  // to{width: 1020px;}
+}
+/* cursor animations */
+@keyframes animated-cursor{
+  from{border-right-color: rgba(255, 255, 255,1);}
+  to{border-right-color: transparent;}
+}
+
+.cardRow {
+  margin-right: 0;
+}
+
+.projTitle {
+  padding-top: 30px;
 }
