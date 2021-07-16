@@ -170,8 +170,6 @@ nav {
   color: white;
 }
 
-
-
 header {
   padding: 20px;
   padding-bottom: 0;
@@ -186,6 +184,7 @@ header {
     h3 {
       font-size: 1.2em;
     }
+    padding-left: 30px;
 
 }
 
@@ -286,7 +285,6 @@ header {
 }
 
 .typed {
-
   border-right: .1em solid rgba(255,255,255,1);
   animation: animated-text 3.5s steps(29, end),
   animated-cursor 600ms steps(29,end) infinite;
@@ -306,4 +304,8 @@ header {
 
 .cardRow {
   margin-right: 0;
+}
+
+.projTitle {
+  padding-top: 30px;
 }
